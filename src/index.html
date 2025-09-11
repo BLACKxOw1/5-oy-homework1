@@ -4,20 +4,645 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Nuriddin.com</title>
   <link rel="stylesheet" href="output.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+  </style>
 </head>
 
-<body>
-  <header class="">
-    <div class="flex"><img src="images/Group.svg" alt="">Северяночка</div>
-    <div></div>
-    <div></div>
-    <div></div>
-  </header>
-  <nav><img class="w-[100%]" src="images/Sliders.svg" alt=""></nav>
+<body class="font-[Rubik] bg-[#FBF8EC]">
 
-  <Script src="js/script.js"></Script>
+  <header class="drop-shadow-sm shadow-gray-400 bg-white">
+
+    <div class="container w-[1208px] flex items-center justify-between h-[72px] m-auto">
+
+      <div class="flex items-center">
+        <img src="images/logo.svg" alt="Logo" class="h-10">
+      </div>
+
+      <div>
+        <button
+          class="flex items-center gap-2 bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition cursor-pointer">
+          <img src="images/menu.svg" alt="Menu" class="w-5 h-5">
+          <span>Каталог</span>
+        </button>
+      </div>
+
+      <div class="relative w-[400px]">
+        <input type="text" placeholder="Найти товар" class="w-[400px] border rounded-lg pl-4 pr-10 py-2
+               focus:ring-2 focus:ring-green-500 border-green-500 
+               outline-none transition">
+        <button class="absolute inset-y-0 right-3 flex items-center text-gray-500 hover:text-green-600 transition">
+          <img src="images/search.svg" alt="Search" class="w-5 h-5 cursor-pointer">
+        </button>
+      </div>
+
+      <div class="flex items-center gap-6">
+        <div class="flex flex-col items-center">
+          <img src="images/Frame 211.svg" alt="" class="h-[24px] w-[24px] cursor-pointer">
+          <a href="#" class="text-sm text-gray-600 hover:text-black">Избранное</a>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="images/Frame 211 (1).svg" alt="" class="h-[24px] w-[24px] cursor-pointer">
+          <a href="#" class="text-sm text-gray-600 hover:text-black">Продукты</a>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="images/Frame 211 (2).svg" alt="" class="h-[24px] w-[24px] cursor-pointer">
+          <a href="#" class="text-sm text-gray-600 hover:text-black">Корзина</a>
+        </div>
+
+        <div class="flex items-center gap-2 cursor-pointer">
+          <img src="images/avatar.svg" alt="Avatar" class="w-8 h-8 rounded-full">
+          <span class="text-sm">Алексей</span>
+        </div>
+      </div>
+
+    </div>
+
+  </header>
+
+  <main>
+
+    <nav
+      class="w-full h-64 bg-[url('images/Sliders.svg')] bg-cover bg-center flex items-center mt-[5px] justify-center">
+    </nav>
+
+    <nav class="container w-[1208px] h-[55px] m-auto pt-[80rpx] pb-[40px] flex justify-between items-center">
+      <div class="font-[Rubik] font-bold text-[36px] leading-[150%] tracking-[0]">Акции</div>
+      <div
+        class="font-[Rubik] font-normal text-[16px] leading-[150%] tracking-[0] text-center align-middle flex items-center text-[#606060] cursor-pointer">
+        Все продукты
+        <span class="text-[24px] leading-none pl-[8px] text-[#767575] cursor-pointer">></span>
+      </div>
+    </nav>
+
+    <section class="container w-[1208px] m-auto pt-[40px]">
+      <div class="flex justify-between">
+        <div class="w-[272px] h-[350px] bg-white rounded-[5px]">
+          <div class="relative">
+            <img src="images/ad29ef5cb5c10bd68b9f6dd7934d9a84ebc9b9cc.png" alt=""
+              class="w-[272px] h-[160px]  object-cover object-center border-b rounded-[5px] border-gray-100">
+            <img src="images/heart.png" alt=""
+              class="absolute opacity-[50%] w-[24px] h-[24px] top-[8px] right-[8px] cursor-pointer">
+            <div
+              class="w-[56px] h-[32px] flex items-center justify-center cursor-help bg-[#FF6633] text-white rounded-[5px] absolute left-[10px] bottom-[10px]">
+              -50%</div>
+          </div>
+          <div class="w-[256px] h-[45px] m-auto ">
+            <div class="flex justify-between items-center">
+              <p class="font-bold text-[18px] text-[#414141] leading-[150%] tracking-[0%]">44,50 ₽</p>
+              <p class="font-normal text-[16px] leading-[150%] tracking-[0%] text-[#606060 items-center]">50,50 ₽</p>
+            </div>
+            <div class="flex justify-between items-center">
+              <p class="font-normal text-[12px] text-[#BFBFBF] leading-[150%] tracking-[0%]">С картой</p>
+              <p class="font-normal text-[12px] text-[#BFBFBF] leading-[150%] tracking-[0%]">Обычная</p>
+            </div>
+          </div>
+          <div
+            class="w-[256px] h-[45px] m-auto py-[8px] font-normal text-[16px] text-[#414141] leading-[150%] tracking-[0%]">
+            Г/Ц Блинчики с мясом вес, Узбекистан
+          </div>
+          <div class="w-[256px] h-[45px] m-auto pt-[8px]">
+            <div class="py-[8px] flex gap-[5px]">
+              <img src="images/star.svg" alt="">
+              <img src="images/star.svg" alt="">
+              <img src="images/star 1.svg" alt="">
+              <img src="images/star 1.svg" alt="">
+              <img src="images/star 1.svg" alt="">
+            </div>
+            <button
+              class="text-[#70C05B] w-full h-[40px] cursor-pointer mt-[5px] border rounded-[5px] hover:text-white transition hover:bg-[#FF6633]">В
+              корзину</button>
+          </div>
+        </div>
+        <div class="w-[272px] h-[350px] bg-[#fff] rounded-[5px]">
+          <div class="relative">
+            <img src="images/426b682e3c7d59fec09bf772f11bc4d84b0d2a2a.png" alt=""
+              class="w-[272px] h-[160px]  object-cover object-center border-b rounded-[5px] border-gray-100">
+            <img src="images/heart.png" alt=""
+              class="absolute opacity-[50%] w-[24px] h-[24px] top-[8px] right-[8px] cursor-pointer">
+            <div
+              class="w-[56px] h-[32px] flex items-center justify-center cursor-help bg-[#FF6633] text-white rounded-[5px] absolute left-[10px] bottom-[10px]">
+              -50%</div>
+          </div>
+          <div class="w-[256px] h-[45px] m-auto ">
+            <div class="flex justify-between items-center">
+              <p class="font-bold text-[18px] text-[#414141] leading-[150%] tracking-[0%]">44,50 ₽</p>
+              <p class="font-normal text-[16px] leading-[150%] tracking-[0%] text-[#606060 items-center]">50,50 ₽</p>
+            </div>
+            <div class="flex justify-between items-center">
+              <p class="font-normal text-[12px] text-[#BFBFBF] leading-[150%] tracking-[0%]">С картой</p>
+              <p class="font-normal text-[12px] text-[#BFBFBF] leading-[150%] tracking-[0%]">Обычная</p>
+            </div>
+          </div>
+          <div
+            class="w-[256px] h-[45px] m-auto py-[8px] font-normal text-[16px] text-[#414141] leading-[150%] tracking-[0%]">
+            Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное...
+          </div>
+          <div class="w-[256px] h-[45px] m-auto pt-[8px]">
+            <div class="py-[8px] flex gap-[5px]">
+              <img src="images/star.svg" alt="">
+              <img src="images/star.svg" alt="">
+              <img src="images/star.svg" alt="">
+              <img src="images/star 1.svg" alt="">
+              <img src="images/star 1.svg" alt="">
+            </div>
+            <button
+              class="text-[#70C05B] w-full h-[40px] cursor-pointer mt-[5px] border rounded-[5px] hover:text-white transition hover:bg-[#FF6633]">В
+              корзину</button>
+          </div>
+        </div>
+        <div class="w-[272px] h-[350px] bg-[#fff] rounded-[5px]">
+          <div class="relative">
+            <img src="images/c3ebdb2953087affaab802491eed306dac7b151e (1).png" alt=""
+              class="w-[272px] h-[160px]  object-contain object-center border-b rounded-[5px] border-gray-100">
+            <img src="images/heart.png" alt=""
+              class="absolute opacity-[50%] w-[24px] h-[24px] top-[8px] right-[8px] cursor-pointer">
+            <div
+              class="w-[56px] h-[32px] flex items-center justify-center cursor-help bg-[#FF6633] text-white rounded-[5px] absolute left-[10px] bottom-[10px]">
+              -50%</div>
+          </div>
+          <div class="w-[256px] h-[45px] m-auto ">
+            <div class="flex justify-between items-center">
+              <p class="font-bold text-[18px] text-[#414141] leading-[150%] tracking-[0%]">44,50 ₽</p>
+              <p class="font-normal text-[16px] leading-[150%] tracking-[0%] text-[#606060 items-center]">50,50 ₽</p>
+            </div>
+            <div class="flex justify-between items-center">
+              <p class="font-normal text-[12px] text-[#BFBFBF] leading-[150%] tracking-[0%]">С картой</p>
+              <p class="font-normal text-[12px] text-[#BFBFBF] leading-[150%] tracking-[0%]">Обычная</p>
+            </div>
+          </div>
+          <div
+            class="w-[256px] h-[45px] m-auto py-[8px] font-normal text-[16px] text-[#414141] leading-[150%] tracking-[0%]">
+            Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...
+          </div>
+          <div class="w-[256px] h-[45px] m-auto pt-[8px]">
+            <div class="py-[8px] flex gap-[5px]">
+              <img src="images/star.svg" alt="">
+              <img src="images/star.svg" alt="">
+              <img src="images/star.svg" alt="">
+              <img src="images/star.svg" alt="">
+              <img src="images/star.svg" alt="">
+            </div>
+            <button
+              class="text-[#70C05B] w-full h-[40px] cursor-pointer mt-[5px] border rounded-[5px] hover:text-white transition hover:bg-[#FF6633]">В
+              корзину</button>
+          </div>
+        </div>
+        <div class="w-[272px] h-[350px] bg-[#fff] rounded-[5px]">
+          <div class="relative">
+            <img src="images/42e5bebec7f4a09ca6f08b72069d9e268e8e27c9.png" alt=""
+              class="w-[272px] h-[160px] object-contain border-b rounded-[5px] border-gray-100">
+            <img src="images/heart.png" alt=""
+              class="absolute opacity-[50%] w-[24px] h-[24px] top-[8px] right-[8px] cursor-pointer">
+            <div
+              class="w-[56px] h-[32px] flex items-center justify-center cursor-help bg-[#FF6633] text-white rounded-[5px] absolute left-[10px] bottom-[10px]">
+              -50%</div>
+          </div>
+          <div class="w-[256px] h-[45px] m-auto ">
+            <div class="flex justify-between items-center">
+              <p class="font-bold text-[18px] text-[#414141] leading-[150%] tracking-[0%]">44,50 ₽</p>
+              <p class="font-normal text-[16px] leading-[150%] tracking-[0%] text-[#606060 items-center]">50,50 ₽</p>
+            </div>
+            <div class="flex justify-between items-center">
+              <p class="font-normal text-[12px] text-[#BFBFBF] leading-[150%] tracking-[0%]">С картой</p>
+              <p class="font-normal text-[12px] text-[#BFBFBF] leading-[150%] tracking-[0%]">Обычная</p>
+            </div>
+          </div>
+          <div
+            class="w-[256px] h-[45px] m-auto py-[8px] font-normal text-[16px] text-[#414141] leading-[150%] tracking-[0%]">
+            Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыро...
+          </div>
+          <div class="w-[256px] h-[45px] m-auto pt-[8px]">
+            <div class="py-[8px] flex gap-[5px]">
+              <img src="images/star.svg" alt="">
+              <img src="images/star.svg" alt="">
+              <img src="images/star.svg" alt="">
+              <img src="images/star.svg" alt="">
+              <img src="images/star2.svg" alt="">
+            </div>
+            <button
+              class="text-[#70C05B] w-full h-[40px] cursor-pointer mt-[5px] border rounded-[5px] hover:text-white transition hover:bg-[#FF6633]">В
+              корзину</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <nav class="container w-[1208px] h-[55px] m-auto pt-[150px] pb-[40px] flex justify-between items-center">
+      <div class="font-[Rubik] font-bold text-[36px] leading-[150%] tracking-[0]">Новинки</div>
+      <div
+        class="font-[Rubik] font-normal text-[16px] leading-[150%] tracking-[0] text-center align-middle flex items-center text-[#606060] cursor-pointer">
+        Все продукты
+        <span class="text-[24px] leading-none pl-[8px] text-[#767575] cursor-pointer">></span>
+      </div>
+    </nav>
+
+    <section class="container w-[1208px] m-auto pt-[40px]">
+      <div class="flex justify-between">
+        <div class="w-[272px] h-[350px] bg-[#fefefe] rounded-[5px]">
+          <div class="relative">
+            <img src="images/99cea554fb0392557de1c2a79808b1a718e015cf.png" alt=""
+              class="w-[272px] h-[160px]  object-contain border-b rounded-[5px] border-gray-100">
+            <img src="images/heart.png" alt=""
+              class="absolute opacity-[50%] w-[24px] h-[24px] top-[8px] right-[8px] cursor-pointer">
+          </div>
+          <div class="w-[256px] h-[45px] m-auto ">
+            <div class="flex justify-between items-center">
+              <p class="font-bold text-[18px] text-[#414141] leading-[150%] tracking-[0%]">599,99 ₽</p>
+            </div>
+          </div>
+          <div
+            class="w-[256px] h-[45px] m-auto py-[8px] font-normal text-[16px] text-[#414141] leading-[150%] tracking-[0%]">
+            Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»
+          </div>
+          <div class="w-[256px] h-[45px] m-auto pt-[8px]">
+            <div class="py-[8px] flex gap-[5px]">
+              <img src="images/star.svg" alt="">
+              <img src="images/star.svg" alt="">
+              <img src="images/star 1.svg" alt="">
+              <img src="images/star 1.svg" alt="">
+              <img src="images/star 1.svg" alt="">
+            </div>
+            <button
+              class="text-[#70C05B] w-full h-[40px] cursor-pointer mt-[5px] border rounded-[5px] hover:text-white transition hover:bg-[#FF6633]">В
+              корзину</button>
+          </div>
+        </div>
+        <div class="w-[272px] h-[350px] bg-[#fefefe] rounded-[5px]">
+          <div class="relative">
+            <img src="images/c3ebdb2953087affaab802491eed306dac7b151e (1).png" alt=""
+              class="w-[272px] h-[160px]  object-contain object-center border-b rounded-[5px] border-gray-100">
+            <img src="images/heart.png" alt=""
+              class="absolute opacity-[50%] w-[24px] h-[24px] top-[8px] right-[8px] cursor-pointer">
+          </div>
+          <div class="w-[256px] h-[45px] m-auto ">
+            <div class="flex justify-between items-center">
+              <p class="font-bold text-[18px] text-[#414141] leading-[150%] tracking-[0%]">44,50 ₽</p>
+            </div>
+          </div>
+          <div
+            class="w-[256px] h-[45px] m-auto py-[8px] font-normal text-[16px] text-[#414141] leading-[150%] tracking-[0%]">
+            Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...
+          </div>
+          <div class="w-[256px] h-[45px] m-auto pt-[8px]">
+            <div class="py-[8px] flex gap-[5px]">
+              <img src="images/star.svg" alt="">
+              <img src="images/star.svg" alt="">
+              <img src="images/star.svg" alt="">
+              <img src="images/star.svg" alt="">
+              <img src="images/star.svg" alt="">
+            </div>
+            <button
+              class="text-[#70C05B] w-full h-[40px] cursor-pointer mt-[5px] border rounded-[5px] hover:text-white transition hover:bg-[#FF6633]">В
+              корзину</button>
+          </div>
+        </div>
+        <div class="w-[272px] h-[350px] bg-[#fefefe] rounded-[5px]">
+          <div class="relative">
+            <img src="images/42e5bebec7f4a09ca6f08b72069d9e268e8e27c9.png" alt=""
+              class="w-[272px] h-[160px] object-contain border-b rounded-[5px] border-gray-100">
+            <img src="images/heart.png" alt=""
+              class="absolute opacity-[50%] w-[24px] h-[24px] top-[8px] right-[8px] cursor-pointer">
+          </div>
+          <div class="w-[256px] h-[45px] m-auto ">
+            <div class="flex justify-between items-center">
+              <p class="font-bold text-[18px] text-[#414141] leading-[150%] tracking-[0%]">159,99 ₽</p>
+            </div>
+          </div>
+          <div
+            class="w-[256px] h-[45px] m-auto py-[8px] font-normal text-[16px] text-[#414141] leading-[150%] tracking-[0%]">
+            Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыро...
+          </div>
+          <div class="w-[256px] h-[45px] m-auto pt-[8px]">
+            <div class="py-[8px] flex gap-[5px]">
+              <img src="images/star.svg" alt="">
+              <img src="images/star.svg" alt="">
+              <img src="images/star 1.svg" alt="">
+              <img src="images/star 1.svg" alt="">
+              <img src="images/star 1.svg" alt="">
+            </div>
+            <button
+              class="text-[#70C05B] w-full h-[40px] cursor-pointer mt-[5px] border rounded-[5px] hover:text-white transition hover:bg-[#FF6633]">В
+              корзину</button>
+          </div>
+        </div>
+        <div class="w-[272px] h-[350px] bg-[#fefefe] rounded-[5px]">
+          <div class="relative">
+            <img src="images/426b682e3c7d59fec09bf772f11bc4d84b0d2a2a.png" alt=""
+              class="w-[272px] h-[160px]  object-cover object-center border-b rounded-[5px] border-gray-100">
+            <img src="images/heart.png" alt=""
+              class="absolute opacity-[50%] w-[24px] h-[24px] top-[8px] right-[8px] cursor-pointer">
+          </div>
+          <div class="w-[256px] h-[45px] m-auto ">
+            <div class="flex justify-between items-center">
+              <p class="font-bold text-[18px] text-[#414141] leading-[150%] tracking-[0%]">49,39 ₽</p>
+            </div>
+          </div>
+          <div
+            class="w-[256px] h-[45px] m-auto py-[8px] font-normal text-[16px] text-[#414141] leading-[150%] tracking-[0%]">
+            Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное...
+          </div>
+          <div class="w-[256px] h-[45px] m-auto pt-[8px]">
+            <div class="py-[8px] flex gap-[5px]">
+              <img src="images/star.svg" alt="">
+              <img src="images/star.svg" alt="">
+              <img src="images/star.svg" alt="">
+              <img src="images/star 1.svg" alt="">
+              <img src="images/star 1.svg" alt="">
+            </div>
+            <button
+              class="text-[#70C05B] w-full h-[40px] cursor-pointer mt-[5px] border rounded-[5px] hover:text-white transition hover:bg-[#FF6633]">В
+              корзину</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <nav class="container w-[1208px] h-[55px] m-auto pt-[150px] pb-[40px] flex justify-between items-center">
+      <div class="font-[Rubik] font-bold text-[36px] leading-[150%] tracking-[0]">Покупали раньше</div>
+      <div
+        class="font-[Rubik] font-normal text-[16px] leading-[150%] tracking-[0] text-center align-middle flex items-center text-[#606060] cursor-pointer">
+        Все продукты
+        <span class="text-[24px] leading-none pl-[8px] text-[#767575] cursor-pointer">></span>
+      </div>
+    </nav>
+
+    <section class="container w-[1208px] m-auto pt-[40px]">
+      <div class="flex justify-between">
+        <div class="w-[272px] h-[350px] bg-[#fefefe] rounded-[5px]">
+          <div class="relative">
+            <img src="images/770bb46b654c2c5455a57d70b59f1ba2f2b8817f.png" alt=""
+              class="w-[272px] h-[160px]  object-contain border-b rounded-[5px] border-gray-100">
+            <img src="images/heart.png" alt=""
+              class="absolute opacity-[50%] w-[24px] h-[24px] top-[8px] right-[8px] cursor-pointer">
+          </div>
+          <div class="w-[256px] h-[45px] m-auto ">
+            <div class="flex justify-between items-center">
+              <p class="font-bold text-[18px] text-[#414141] leading-[150%] tracking-[0%]">77,99 ₽</p>
+            </div>
+          </div>
+          <div
+            class="w-[256px] h-[45px] m-auto py-[8px] font-normal text-[16px] text-[#414141] leading-[150%] tracking-[0%]">
+            Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»
+          </div>
+          <div class="w-[256px] h-[45px] m-auto pt-[8px]">
+            <div class="py-[8px] flex gap-[5px]">
+              <img src="images/star.svg" alt="">
+              <img src="images/star.svg" alt="">
+              <img src="images/star 1.svg" alt="">
+              <img src="images/star 1.svg" alt="">
+              <img src="images/star 1.svg" alt="">
+            </div>
+            <button
+              class="text-[#70C05B] w-full h-[40px] cursor-pointer mt-[5px] border rounded-[5px] hover:text-white transition hover:bg-[#FF6633]">В
+              корзину</button>
+          </div>
+        </div>
+        <div class="w-[272px] h-[350px] bg-[#fefefe] rounded-[5px]">
+          <div class="relative">
+            <img src="images/42e5bebec7f4a09ca6f08b72069d9e268e8e27c9.png" alt=""
+              class="w-[272px] h-[160px] object-contain border-b rounded-[5px] border-gray-100">
+            <img src="images/heart.png" alt=""
+              class="absolute opacity-[50%] w-[24px] h-[24px] top-[8px] right-[8px] cursor-pointer">
+          </div>
+          <div class="w-[256px] h-[45px] m-auto ">
+            <div class="flex justify-between items-center">
+              <p class="font-bold text-[18px] text-[#414141] leading-[150%] tracking-[0%]">159,99 ₽</p>
+            </div>
+          </div>
+          <div
+            class="w-[256px] h-[45px] m-auto py-[8px] font-normal text-[16px] text-[#414141] leading-[150%] tracking-[0%]">
+            Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыро...
+          </div>
+          <div class="w-[256px] h-[45px] m-auto pt-[8px]">
+            <div class="py-[8px] flex gap-[5px]">
+              <img src="images/star.svg" alt="">
+              <img src="images/star.svg" alt="">
+              <img src="images/star 1.svg" alt="">
+              <img src="images/star 1.svg" alt="">
+              <img src="images/star 1.svg" alt="">
+            </div>
+            <button
+              class="text-[#70C05B] w-full h-[40px] cursor-pointer mt-[5px] border rounded-[5px] hover:text-white transition hover:bg-[#FF6633]">В
+              корзину</button>
+          </div>
+        </div>
+        <div class="w-[272px] h-[350px] bg-[#fefefe] rounded-[5px]">
+          <div class="relative">
+            <img src="images/99cea554fb0392557de1c2a79808b1a718e015cf.png" alt=""
+              class="w-[272px] h-[160px]  object-contain object-center border-b rounded-[5px] border-gray-100">
+            <img src="images/heart.png" alt=""
+              class="absolute opacity-[50%] w-[24px] h-[24px] top-[8px] right-[8px] cursor-pointer">
+          </div>
+          <div class="w-[256px] h-[45px] m-auto ">
+            <div class="flex justify-between items-center">
+              <p class="font-bold text-[18px] text-[#414141] leading-[150%] tracking-[0%]">44,50 ₽</p>
+            </div>
+          </div>
+          <div
+            class="w-[256px] h-[45px] m-auto py-[8px] font-normal text-[16px] text-[#414141] leading-[150%] tracking-[0%]">
+            Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...
+          </div>
+          <div class="w-[256px] h-[45px] m-auto pt-[8px]">
+            <div class="py-[8px] flex gap-[5px]">
+              <img src="images/star.svg" alt="">
+              <img src="images/star.svg" alt="">
+              <img src="images/star 1.svg" alt="">
+              <img src="images/star 1.svg" alt="">
+              <img src="images/star 1.svg" alt="">
+            </div>
+            <button
+              class="text-[#70C05B] w-full h-[40px] cursor-pointer mt-[5px] border rounded-[5px] hover:text-white transition hover:bg-[#FF6633]">В
+              корзину</button>
+          </div>
+        </div>
+        <div class="w-[272px] h-[350px] bg-[#fefefe] rounded-[5px]">
+          <div class="relative">
+            <img src="images/426b682e3c7d59fec09bf772f11bc4d84b0d2a2a.png" alt=""
+              class="w-[272px] h-[160px]  object-cover object-center border-b rounded-[5px] border-gray-100">
+            <img src="images/heart.png" alt=""
+              class="absolute opacity-[50%] w-[24px] h-[24px] top-[8px] right-[8px] cursor-pointer">
+          </div>
+          <div class="w-[256px] h-[45px] m-auto ">
+            <div class="flex justify-between items-center">
+              <p class="font-bold text-[18px] text-[#414141] leading-[150%] tracking-[0%]">49,39 ₽</p>
+            </div>
+          </div>
+          <div
+            class="w-[256px] h-[45px] m-auto py-[8px] font-normal text-[16px] text-[#414141] leading-[150%] tracking-[0%]">
+            Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное...
+          </div>
+          <div class="w-[256px] h-[45px] m-auto pt-[8px]">
+            <div class="py-[8px] flex gap-[5px]">
+              <img src="images/star.svg" alt="">
+              <img src="images/star.svg" alt="">
+              <img src="images/star 1.svg" alt="">
+              <img src="images/star 1.svg" alt="">
+              <img src="images/star 1.svg" alt="">
+            </div>
+            <button
+              class="text-[#70C05B] w-full h-[40px] cursor-pointer mt-[5px] border rounded-[5px] hover:text-white transition hover:bg-[#FF6633]">В
+              корзину</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <nav class="container w-[1208px] h-[55px] m-auto pt-[150px] pb-[40px] flex justify-between items-center">
+      <div class="font-[Rubik] font-bold text-[36px] leading-[150%] tracking-[0]">Специальные предложения</div>
+    </nav>
+
+    <section class="container w-[1208px] m-auto pt-[40px] mb-[30px]">
+      <div class="flex items-center justify-between">
+        <div class="w-[585px] h-[200px] bg-[#FCD5BA] rounded-[5px] shadow-xl shadow-[#CA936080] flex ">
+          <div class="pl-[30px] pt-[30px]">
+            <h1 class="font-bold text-[24px] text-[#414141] leading-[150%] tracking-[0%]">Оформите карту «Северяночка»
+            </h1>
+            <p class="font-normal text-[16px] text-[#414141] leading-[150%] tracking-[0%]">И получайте бонусы при
+              покупке
+              в магазинах и на сайте</p>
+          </div>
+          <img src="images/Карта лояльности-10 1.svg" alt="">
+        </div>
+        <div class="w-[585px] h-[200px] bg-[#E5FFDE] rounded-[5px] flex gap-[50px]">
+          <div class="pl-[30px] pt-[30px]">
+            <h1 class="font-bold text-[24px] text-[#414141] leading-[150%] tracking-[0%]">Покупайте <br>акционные товары
+            </h1>
+            <p class="font-normal text-[16px] text-[#414141] leading-[150%] tracking-[0%]">И получайте вдвое больше
+              <br>бонусов
+            </p>
+          </div>
+          <img src="images/73 1.svg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <nav class="container w-[1208px] h-[55px] m-auto pt-[150px] pb-[40px] flex justify-between items-center">
+      <div class="font-[Rubik] font-bold text-[36px] leading-[150%] tracking-[0]">Наши магазины</div>
+    </nav>
+
+    <section class="container w-[1208px] m-auto pt-[40px] mb-[30px]">
+      <div>
+        <div class="flex gap-[25px] cursor-pointer">
+          <div
+            class="w-[97px] h-[32px] font-normal text-[12px] flex items-center justify-center leading-[150%] tracking-[0] transition rounded-[4px] bg-[#F3F2F1] hover:bg-[#70C05B] hover:text-[white]">
+            п.Щельяюр</div>
+          <div
+            class="w-[97px] h-[32px] font-normal text-[12px] flex items-center justify-center leading-[150%] tracking-[0] transition rounded-[4px] bg-[#F3F2F1] hover:bg-[#70C05B] hover:text-[white]">
+            д.Вертеп</div>
+          <div
+            class="w-[97px] h-[32px] font-normal text-[12px] flex items-center justify-center leading-[150%] tracking-[0] transition rounded-[4px] bg-[#F3F2F1] hover:bg-[#70C05B] hover:text-[white]">
+            с.Краснобор</div>
+          <div
+            class="w-[97px] h-[32px] font-normal text-[12px] flex items-center justify-center leading-[150%] tracking-[0] transition rounded-[4px] bg-[#F3F2F1] hover:bg-[#70C05B] hover:text-[white]">
+            д.Диюр</div>
+        </div>
+        <img src="images/image 12.svg" alt="map" class="mt-[25px]">
+      </div>
+    </section>
+
+    <nav class="container w-[1208px] h-[55px] m-auto pt-[150px] pb-[40px] flex justify-between items-center">
+      <div class="font-[Rubik] font-bold text-[36px] leading-[150%] tracking-[0]">Статьи</div>
+      <div
+        class="font-[Rubik] font-normal text-[16px] leading-[150%] tracking-[0] text-center align-middle flex items-center text-[#606060] cursor-pointer">
+        Все статьи
+        <span class="text-[24px] leading-none pl-[8px] text-[#767575] cursor-pointer">></span>
+      </div>
+    </nav>
+
+    <section class="container w-[1208px] m-auto pt-[40px] mb-[80px]">
+      <div class="flex justify-between">
+        <div class="h-[420px] w-[376px] bg-white rounded-[5px]">
+          <div>
+            <img src="images/image 5.svg" alt="" class="rounded-t-[5px]">
+          </div>
+          <div>
+            <p class="w-[356px] m-auto font-normal text-[12px] leading-[150%] text-[#8F8F8F] tracking-[0] py-[10px]">
+              05.03.2021</p>
+            <h1 class="w-[356px] m-auto font-bold text-[18px] leading-[150%] text-[#414141] tracking-[0] pb-[10px]">
+              Режим использования масок и перчаток на территории магазинов</h1>
+            <p class="w-[356px] m-auto font-normal text-[16px] text-[#414141] leading-[150%] tracking-[0] pb-[10px]">
+              Подробная информация о режимах использования масок и перчаток на территории магазинов "ЛЕНТА". Информация
+              обновляется каждый будний день.</p>
+            <button
+              class="cursor-pointer rounded-[4px] transition w-[150px] h-[40px] font-normal text-[16px] leading-[150%] tracking-[0] bg-[#E5FFDE] text-[#70C05B] ml-[10px] hover:bg-[#70C05B] hover:text-white">Подробнее</button>
+          </div>
+        </div>
+        <div class="h-[420px] w-[376px] bg-white rounded-[5px]">
+          <div>
+            <img src="images/image 5 (1).svg" alt="" class="rounded-t-[5px]">
+          </div>
+          <div>
+            <p class="w-[356px] m-auto font-normal text-[12px] leading-[150%] text-[#8F8F8F] tracking-[0] py-[10px]">
+              05.03.2021</p>
+            <h1 class="w-[356px] m-auto font-bold text-[18px] leading-[150%] text-[#414141] tracking-[0] pb-[10px]">
+              Весеннее настроение для каждой</h1>
+            <p class="w-[356px] m-auto font-normal text-[16px] text-[#414141] leading-[150%] tracking-[0] pb-[35px]">8
+              Марта – это не просто Международный женский день, это ещё день тюльпанов, приятных сюрпризов и праздничных
+              тёплых пожеланий.</p>
+            <button
+              class="cursor-pointer rounded-[4px] transition w-[150px] h-[40px] font-normal text-[16px] leading-[150%] tracking-[0] bg-[#E5FFDE] text-[#70C05B] ml-[10px] hover:bg-[#70C05B] hover:text-white">Подробнее</button>
+          </div>
+        </div>
+        <div class="h-[420px] w-[376px] bg-white rounded-[5px]">
+          <div>
+            <img src="images/image 5 (2).svg" alt="" class="rounded-t-[5px]">
+          </div>
+          <div>
+            <p class="w-[356px] m-auto font-normal text-[12px] leading-[150%] text-[#8F8F8F] tracking-[0] py-[10px]">
+              22.02.2020</p>
+            <h1 class="w-[356px] m-auto font-bold text-[18px] leading-[150%] text-[#414141] tracking-[0] pb-[10px]">ЗОЖ
+              или ФАСТФУД. А вы на чьей стороне? Голосуем!</h1>
+            <p class="w-[356px] m-auto font-normal text-[16px] text-[#414141] leading-[150%] tracking-[0] pb-[10px]">
+              Голосуйте за любимые категории, выбирайте категорию-победителя в мобильном приложении и получайте кешбэк
+              10% баллами в апреле!</p>
+            <button
+              class="cursor-pointer rounded-[4px] transition w-[150px] h-[40px] font-normal text-[16px] leading-[150%] tracking-[0] bg-[#E5FFDE] text-[#70C05B] ml-[10px] hover:bg-[#70C05B] hover:text-white">Подробнее</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="h-[126px] flex flex-col bg-[#F9F4E2]" style="background-image: url('images/bg.svg');">
+    <div class="container w-[1208px] m-auto ">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center">
+          <div class="mr-[40px]">
+            <img src="images/lastlogo.svg" alt="">
+          </div>
+          <ul class="flex list-none gap-[40px] font-normal text-[11px] leading-[150%] text-[#414141] tracking-[0]">
+            <li class="cursor-pointer">О компании</li>
+            <li class="cursor-pointer">Контакты</li>
+            <li class="cursor-pointer">Вакансии</li>
+            <li class="cursor-pointer">Статьи</li>
+            <li class="cursor-pointer">Политика обработки персональных данных</li>
+          </ul>
+        </div>
+        <div class="flex items-center">
+          <div class="flex gap-[16px]">
+            <img src="images/instagram.svg" alt="" class="w-[24px] h-[24px]">
+            <img src="images/vkontakte.svg" alt="" class="w-[24px] h-[24px]">
+            <img src="images/facebook.svg" alt="" class="w-[24px] h-[24px]">
+            <img src="images/ok.svg" alt="" class="w-[24px] h-[24px]">
+          </div>
+          <div class="flex pl-[40px] pr-[8px]">
+            <img src="images/phone.svg" alt="">
+            <p>+998 (90) 777 33 33</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center justify-end pt-[16px]">
+        <p class="font-normal text-[11px] leading-[150%] text-[#414141] tracking-[0] pr-[8px]">Дизайн</p>
+        <img src="images/logo-zasovskiy-small-black.svg" alt="">
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>
